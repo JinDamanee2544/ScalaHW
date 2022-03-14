@@ -1,17 +1,13 @@
 package HomeWork
 
 object palindrome {
-  def myLength(list:List[Any]) : Int = {
-    if(list.isEmpty) return 0
-    else 1+myLength(list.tail)
-  }
   def myReverse(list:List[Any]): List[Any] ={
     if(list.isEmpty) return List()
     else return myReverse(list.tail) ++ List(list.head)
   }
 
   def palindrome(list:List[Any]) : Boolean = {
-    if(list.isEmpty || myLength(list)==1) return true
+    if(list.isEmpty || list.length==1) return true
     var end = myReverse(list).head
     if(list.head!=end) return false
     var cutting = myReverse(myReverse(list).tail).tail

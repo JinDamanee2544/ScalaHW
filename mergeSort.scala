@@ -1,11 +1,6 @@
 package HomeWork
 
 object mergeSort {
-  def myLength(list:List[Any]) : Int = {
-    if(list.isEmpty) return 0
-    else 1+myLength(list.tail)
-  }
-
   def merge(l1:List[Int],l2:List[Int]) : List[Int] = {
     if(l1.isEmpty) return l2
     if(l2.isEmpty) return l1
@@ -24,7 +19,7 @@ object mergeSort {
     return merge(leftArr,rightArr)
   }
   def mergeSort(list:List[Int]) : List[Int] = {
-    myMergeSort(list,0,myLength(list)-1)
+    myMergeSort(list,0,list.length-1)
   }
   def main(args: Array[String]): Unit = {
     println(mergeSort(List(4,1,3,9,5,10,5,6,60)))

@@ -1,6 +1,6 @@
 package HomeWork
 
-object myFilter {
+object Question07 {
   def myFilter(f:Int => Boolean) (list:List[Int]) : List[Int] = {
     if(list.isEmpty) return List()
     if(f(list.head)) return List(list.head) ++ myFilter(f)(list.tail)

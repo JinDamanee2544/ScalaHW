@@ -1,6 +1,6 @@
 package HomeWork
 
-object palindrome {
+object Question05 {
   def myReverse(list:List[Any]): List[Any] ={
     if(list.isEmpty) return List()
     else return myReverse(list.tail) ++ List(list.head)

@@ -1,6 +1,6 @@
 package HomeWork
 
-object subList {
+object Question03 {
   def member(element:Any , list:List[Any]) : Boolean = {
     if(list.isEmpty) return false
     if(list.head==element) return true;

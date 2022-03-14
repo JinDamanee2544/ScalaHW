@@ -1,6 +1,6 @@
 package HomeWork
 
-object sumAll {
+object Question08 {
   def sumEachPair(list1:List[Int],list2:List[Int]) : List[Int] = {
     if(list1.isEmpty && list2.isEmpty) return List()
     if(list1.isEmpty) return list2

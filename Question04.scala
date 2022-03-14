@@ -1,6 +1,6 @@
 package HomeWork
 
-object mergeSort {
+object Question04 {
   def merge(l1:List[Int],l2:List[Int]) : List[Int] = {
     if(l1.isEmpty) return l2
     if(l2.isEmpty) return l1

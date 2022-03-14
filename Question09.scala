@@ -1,6 +1,6 @@
 package HomeWork
 
-object turingStep {
+object Question09 {
   def turingStep(f:Char=>Char,tape:List[Char],n:Int) : List[Char] = {
     if(tape.isEmpty || n==0) return tape
     return List(f(tape.head)) ++ turingStep(f,tape.tail,n-1)
